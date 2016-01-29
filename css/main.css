@@ -37,6 +37,7 @@ html {
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
+
 .eyes {
   animation: move 0.001s linear infinite alternate;
 }
