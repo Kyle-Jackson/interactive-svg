@@ -10,8 +10,58 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  width: 30%;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.st0 {
+  fill:#673200;
+}
+.st1 {
+  fill:#FFAACA;
+  }
+
+.st2 {
+  fill:#C65B00;
+  }
+
+.st3 {
+  fill:none;
+  stroke:#000000;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+.eyes {
+  animation: move 0.001s linear infinite alternate;
+}
+
+.eyes {
+  animation: move 0.001s linear infinite alternate;
+}
+
+.ears {
+  transform: translate(0, 0);
+  transition: all 1s linear;
+}
+
+svg:hover .ears {
+  transform: translate(0, -20px);
+}
+
+@keyframes move {
+
+  from {
+    /* We start the rotation at 0 degrees */
+    transform: translate(0);
+  }
+
+  to {
+    /* And end the rotation at 360 degrees */
+    transform: translate(10px);
+  }
 }
